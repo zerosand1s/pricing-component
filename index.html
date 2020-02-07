@@ -16,7 +16,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <script type="text/javascript" src="http://livejs.com/live.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <!-- <script type="text/javascript" src="http://livejs.com/live.js"></script> -->
     <title>Frontend Mentor | Pricing Component</title>
   </head>
   <body>
@@ -27,7 +29,7 @@
       <div class="toggle">
         <span>Annually</span>
         <label class="switch">
-          <input type="checkbox" />
+          <input type="checkbox" id="toggle-plans" />
           <span class="slider round"></span>
         </label>
         <span>Monthly</span>
@@ -36,7 +38,7 @@
         <div class="plan">
           <div class="plan-details">
             <div class="plan-name">Basic</div>
-            <div class="plan-price"><span>$</span>199.99</div>
+            <div class="plan-price" id="basic-price"></div>
             <hr />
             <div class="plan-storage">500 GB Storage</div>
             <hr />
@@ -52,7 +54,7 @@
         <div class="plan">
           <div class="plan-details">
             <div class="plan-name">Professional</div>
-            <div class="plan-price"><span>$</span>249.99</div>
+            <div class="plan-price" id="professional-price"></div>
             <hr />
             <div class="plan-storage">1 TB Storage</div>
             <hr />
@@ -68,7 +70,7 @@
         <div class="plan">
           <div class="plan-details">
             <div class="plan-name">Master</div>
-            <div class="plan-price"><span>$</span>399.99</div>
+            <div class="plan-price" id="master-price"></div>
             <hr />
             <div class="plan-storage">2 TB Storage</div>
             <hr />
