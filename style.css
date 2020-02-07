@@ -68,6 +68,12 @@ body {
   );
 }
 
+.plan .plan-learn-more button:hover {
+  color: hsl(233, 13%, 49%);
+  border: solid 1px hsl(233, 13%, 49%);
+  background-image: linear-gradient(to right, #ffffff, #ffffff);
+}
+
 .plan hr {
   display: block;
   height: 1px;
@@ -97,6 +103,16 @@ body {
   background-image: linear-gradient(to right, #ffffff, #ffffff);
 }
 
+.plans > :nth-child(2) .plan-learn-more button:hover {
+  color: #ffffff;
+  border: solid 1px #ffffff;
+  background-image: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+}
+
 .switch {
   position: relative;
   display: inline-block;
@@ -119,7 +135,6 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   background-image: linear-gradient(
