@@ -1,52 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Our Pricing
-  Annually
-  Monthly
-
-  Basic
-  &dollar;19.99
-  &dollar;199.99
-  500 GB Storage
-  2 Users Allowed
-  Send up to 3 GB
-  Learn More
-
-  Professional
-  &dollar;24.99
-  &dollar;249.99
-  1 TB Storage
-  5 Users Allowed
-  Send up to 10 GB
-  Learn More
-
-  Master
-  &dollar;39.99
-  &dollar;399.99
-  2 TB Storage
-  10 Users Allowed
-  Send up to 20 GB
-  Learn More
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="http://livejs.com/live.js"></script>
+    <title>Frontend Mentor | Pricing Component</title>
+  </head>
+  <body>
+    <div class="base">
+      <div class="pricing-header">
+        <h2>Our Pricing</h2>
+      </div>
+      <div class="toggle">
+        <span>Annually</span>
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+        <span>Monthly</span>
+      </div>
+      <div class="plans">
+        <div class="plan">
+          <div class="plan-details">
+            <div class="plan-name">Basic</div>
+            <div class="plan-price"><span>$</span>199.99</div>
+            <hr />
+            <div class="plan-storage">500 GB Storage</div>
+            <hr />
+            <div class="plan-users">2 Users allowed</div>
+            <hr />
+            <div class="plan-send-limit">Send up to 3 GB</div>
+            <hr />
+            <div class="plan-learn-more">
+              <button>Learn more</button>
+            </div>
+          </div>
+        </div>
+        <div class="plan">
+          <div class="plan-details">
+            <div class="plan-name">Professional</div>
+            <div class="plan-price"><span>$</span>249.99</div>
+            <hr />
+            <div class="plan-storage">1 TB Storage</div>
+            <hr />
+            <div class="plan-users">5 Users allowed</div>
+            <hr />
+            <div class="plan-send-limit">Send up to 10 GB</div>
+            <hr />
+            <div class="plan-learn-more">
+              <button>Learn more</button>
+            </div>
+          </div>
+        </div>
+        <div class="plan">
+          <div class="plan-details">
+            <div class="plan-name">Master</div>
+            <div class="plan-price"><span>$</span>399.99</div>
+            <hr />
+            <div class="plan-storage">2 TB Storage</div>
+            <hr />
+            <div class="plan-users">10 Users allowed</div>
+            <hr />
+            <div class="plan-send-limit">Send up to 20 GB</div>
+            <hr />
+            <div class="plan-learn-more">
+              <button>Learn more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
