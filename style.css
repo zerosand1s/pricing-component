@@ -1,0 +1,164 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  background-color: hsl(240, 78%, 98%);
+}
+
+.base {
+  position: relative;
+  top: 10%;
+  bottom: 10%;
+  text-align: center;
+}
+
+.pricing-header {
+  color: hsl(233, 13%, 49%);
+  margin: 10px 0;
+}
+
+.toggle {
+  display: inline-block;
+  color: hsl(234, 14%, 74%);
+  margin: 20px 0;
+}
+
+.plans {
+  width: 100%;
+  margin-top: 40px;
+  display: inline-block;
+}
+
+.plan {
+  width: 280px;
+  padding: 2px 20px;
+  border-radius: 8px;
+  margin-right: -4px;
+  display: inline-block;
+  color: hsl(233, 13%, 49%);
+  background-color: #ffffff;
+}
+
+.plan .plan-details div {
+  margin: 20px 0;
+}
+
+.plan .plan-price {
+  font-size: 60px;
+  color: hsl(232, 13%, 33%);
+}
+
+.plan .plan-price span {
+  font-size: 35px;
+  margin-right: 5px;
+  vertical-align: 10px;
+}
+
+.plan .plan-learn-more button {
+  width: 100%;
+  height: 40px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 8px;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+}
+
+.plan hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid hsl(234, 14%, 74%);
+  margin: 1em 0;
+  padding: 0;
+}
+
+.plans > :nth-child(2) {
+  color: #ffffff;
+  background-image: linear-gradient(
+    to bottom right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  padding: 20px;
+}
+
+.plans > :nth-child(2) .plan-price {
+  font-size: 60px;
+  color: #ffffff;
+}
+
+.plans > :nth-child(2) .plan-learn-more button {
+  color: hsl(233, 13%, 49%);
+  background-image: linear-gradient(to right, #ffffff, #ffffff);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 28px;
+  margin: 0 15px;
+  vertical-align: middle;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-image: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 26px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+/* input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+} */
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
