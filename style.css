@@ -1,14 +1,15 @@
 body {
-  font-family: "Montserrat", sans-serif;
   font-size: 15px;
-  background-color: hsl(240, 78%, 98%);
+  font-family: "Montserrat", sans-serif;
+  background: url(/images/bg-top.svg) no-repeat right top,
+    url(/images/bg-bottom.svg) no-repeat bottom left, hsl(240, 78%, 98%);
 }
 
 .base {
-  position: relative;
-  top: 10%;
-  bottom: 10%;
+  /* position: absolute; */
+  /* margin: 0 0 0 70px; */
   text-align: center;
+  padding: 20px 0 45px 0;
 }
 
 .pricing-header {
@@ -19,17 +20,17 @@ body {
 .toggle {
   display: inline-block;
   color: hsl(234, 14%, 74%);
-  margin: 20px 0;
+  margin: 18px 0 0 0;
 }
 
 .plans {
   width: 100%;
-  margin-top: 40px;
+  margin: 40px 0 0 0;
   display: inline-block;
 }
 
 .plan {
-  width: 280px;
+  width: 250px;
   padding: 2px 20px;
   border-radius: 8px;
   margin-right: -4px;
@@ -39,7 +40,7 @@ body {
 }
 
 .plan .plan-details div {
-  margin: 20px 0;
+  margin: 15px 0;
 }
 
 .plan .plan-price {
